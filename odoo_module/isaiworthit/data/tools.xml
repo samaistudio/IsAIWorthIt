@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="tool_microsoft_365_copilot" model="isaiworthit.tool">
+        <field name="name">Microsoft 365 Copilot</field>
+        <field name="unit">active_day</field>
+        <field name="minutes_per_action">15</field>
+    </record>
+    <record id="tool_github_copilot" model="isaiworthit.tool">
+        <field name="name">GitHub Copilot</field>
+        <field name="unit">active_day</field>
+        <field name="minutes_per_action">30</field>
+    </record>
+    <record id="tool_chatgpt_team" model="isaiworthit.tool">
+        <field name="name">ChatGPT Team</field>
+        <field name="unit">use</field>
+        <field name="minutes_per_action">6</field>
+    </record>
+    <record id="tool_gemini_for_workspace" model="isaiworthit.tool">
+        <field name="name">Gemini for Workspace</field>
+        <field name="unit">use</field>
+        <field name="minutes_per_action">6</field>
+    </record>
+    <record id="tool_deepl_pro" model="isaiworthit.tool">
+        <field name="name">DeepL Pro</field>
+        <field name="unit">use</field>
+        <field name="minutes_per_action">3</field>
+    </record>
+    <record id="tool_canva_ai" model="isaiworthit.tool">
+        <field name="name">Canva AI</field>
+        <field name="unit">use</field>
+        <field name="minutes_per_action">10</field>
+    </record>
+    <record id="tool_claude_code" model="isaiworthit.tool">
+        <field name="name">Claude Code</field>
+        <field name="unit">session</field>
+        <field name="minutes_per_action">12</field>
+    </record>
+</odoo>

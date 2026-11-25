@@ -1,0 +1,103 @@
+{
+  "company": {
+    "name": "Your company",
+    "industry": "",
+    "city": "",
+    "default_hourly_cost": 45,
+    "ai_start_month": "",
+    "benchmarks": {
+      "Microsoft 365 Copilot": {
+        "unit": "active_day",
+        "minutes": 15
+      },
+      "ChatGPT Team": {
+        "unit": "use",
+        "minutes": 6
+      },
+      "Claude Code": {
+        "unit": "session",
+        "minutes": 12
+      }
+    }
+  },
+  "connectors": {
+    "licences": {
+      "enabled": false,
+      "tools": {
+        "Microsoft 365 Copilot": {
+          "seats": 10,
+          "price_eur": 28
+        },
+        "ChatGPT Team": {
+          "seats": 5,
+          "price_eur": 29
+        }
+      }
+    },
+    "claude_code_local": {
+      "enabled": false,
+      "path": "~/.claude/projects",
+      "person": "",
+      "team": ""
+    },
+    "anthropic_admin": {
+      "enabled": false,
+      "api_key_env": "ANTHROPIC_ADMIN_KEY",
+      "days": 30
+    },
+    "m365_copilot_csv": {
+      "enabled": false,
+      "files": [
+        "~/Downloads/Copilot-usage.csv"
+      ]
+    },
+    "github_copilot": {
+      "enabled": false,
+      "org": "your-org",
+      "token_env": "GITHUB_TOKEN"
+    },
+    "usage_csv": {
+      "enabled": false,
+      "files": [
+        "examples/usage.csv"
+      ]
+    },
+    "odoo": {
+      "enabled": false,
+      "url": "http://localhost:8069",
+      "db": "",
+      "user": "",
+      "password_env": "ODOO_PASSWORD"
+    },
+    "personio": {
+      "enabled": false,
+      "client_id_env": "PERSONIO_CLIENT_ID",
+      "client_secret_env": "PERSONIO_CLIENT_SECRET"
+    },
+    "people_csv": {
+      "enabled": false,
+      "file": "examples/people.csv"
+    },
+    "kpi_csv": {
+      "enabled": false,
+      "file": "examples/kpis.csv"
+    },
+    "survey_csv": {
+      "enabled": false,
+      "files": [
+        "examples/survey.csv"
+      ]
+    }
+  },
+  "access": {
+    "management": [
+      "owner@your-company.de"
+    ],
+    "team_leads": {
+      "Sales": [
+        "lead@your-company.de"
+      ]
+    },
+    "everyone": true
+  }
+}

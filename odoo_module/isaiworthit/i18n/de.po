@@ -1,0 +1,522 @@
+# German translation of the IsAIWorthIt Odoo module.
+# This file contains the translation of the following modules:
+# 	* isaiworthit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20261112\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 11:22+0000\n"
+"PO-Revision-Date: 2026-11-25 11:22+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: isaiworthit
+#: model:ir.actions.act_window,name:isaiworthit.action_tool
+#: model:ir.ui.menu,name:isaiworthit.menu_licences
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_tool_list
+msgid "AI licences"
+msgstr "KI-Lizenzen"
+
+#. module: isaiworthit
+#: model:ir.model,name:isaiworthit.model_isaiworthit_month
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_month_list
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_month_pivot
+msgid "AI results per month"
+msgstr "KI-Ergebnisse pro Monat"
+
+#. module: isaiworthit
+#: model:ir.model,name:isaiworthit.model_isaiworthit_result
+msgid "AI results per team and tool"
+msgstr "KI-Ergebnisse pro Team und Tool"
+
+#. module: isaiworthit
+#: model:ir.model,name:isaiworthit.model_isaiworthit_tool
+msgid "AI tool licence"
+msgstr "KI-Tool-Lizenz"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__active_users
+msgid "Active"
+msgstr "Aktiv"
+
+#. module: isaiworthit
+#: model_terms:ir.actions.act_window,help:isaiworthit.action_tool
+msgid "Add the AI tools you pay for"
+msgstr "Fügen Sie die KI-Tools hinzu, für die Sie bezahlen"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_import__hourly_cost
+msgid "Average hourly cost"
+msgstr "Durchschnittliche Stundenkosten"
+
+#. module: isaiworthit
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_tool__minutes_per_action
+msgid ""
+"Benchmark: minutes saved per counted activity. A starting point; the monthly"
+" staff survey corrects it."
+msgstr "Richtwert: eingesparte Minuten pro gezählter Aktivität. Ein Startwert; die monatliche Mitarbeiterumfrage korrigiert ihn."
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__result_ids
+msgid "By team and tool"
+msgstr "Nach Team und Tool"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__calibration_factor
+msgid "Calibration factor"
+msgstr "Kalibrierungsfaktor"
+
+#. module: isaiworthit
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_import_form
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#. module: isaiworthit
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_import__usage_file
+msgid ""
+"Columns: date, user (work e-mail), tool, uses, minutes (optional). Export "
+"from Microsoft 365, GitHub, ChatGPT or a shared sheet."
+msgstr "Spalten: date, user (geschäftliche E-Mail), tool, uses, minutes (optional). Export aus Microsoft 365, GitHub, ChatGPT oder einer gemeinsamen Tabelle."
+
+#. module: isaiworthit
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_import__survey_file
+msgid ""
+"Columns: month, answer. The anonymous monthly question 'About how much time "
+"did AI save you this week?'"
+msgstr "Spalten: month, answer. Die anonyme monatliche Frage „Wie viel Zeit hat Ihnen KI diese Woche ungefähr gespart?“"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__company_id
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__company_id
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__company_id
+msgid "Company"
+msgstr "Unternehmen"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__cost_per_seat
+msgid "Cost per seat"
+msgstr "Kosten pro Lizenz"
+
+#. module: isaiworthit
+#. odoo-python
+#: code:addons/isaiworthit/wizard/usage_import.py:0
+msgid "Could not read the file: %s"
+msgstr "Die Datei konnte nicht gelesen werden: %s"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__actions
+msgid "Counted uses"
+msgstr "Gezählte Nutzungen"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_import__create_uid
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__create_uid
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__create_uid
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_import__create_date
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__create_date
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__create_date
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__currency_id
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__currency_id
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__currency_id
+msgid "Currency"
+msgstr "Währung"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__department_id
+msgid "Department"
+msgstr "Abteilung"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_import__display_name
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__display_name
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__display_name
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: isaiworthit
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_result__department_id
+msgid "Empty when the team has fewer than 5 people: small teams are combined."
+msgstr "Leer, wenn das Team weniger als 5 Personen hat: kleine Teams werden zusammengefasst."
+
+#. module: isaiworthit
+#: model_terms:ir.actions.act_window,help:isaiworthit.action_month
+msgid ""
+"Export usage from Microsoft 365, GitHub Copilot or ChatGPT (or keep a shared sheet), then use\n"
+"               <b>Import usage</b>. You will see what AI saved in hours and euros next to what the licences cost."
+msgstr "Exportieren Sie die Nutzung aus Microsoft 365, GitHub Copilot oder ChatGPT (oder führen Sie eine gemeinsame Tabelle) und wählen Sie dann\n               <b>Nutzung importieren</b>. Sie sehen, was KI in Stunden und Euro eingespart hat, neben dem, was die Lizenzen kosten."
+
+#. module: isaiworthit
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_month__month
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_result__month
+msgid "First day of the month."
+msgstr "Erster Tag des Monats."
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__hourly_cost
+msgid "Hourly cost"
+msgstr "Stundenkosten"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__benchmark_hours
+msgid "Hours (benchmark)"
+msgstr "Stunden (Richtwert)"
+
+#. module: isaiworthit
+#: model:ir.ui.menu,name:isaiworthit.menu_teams
+msgid "Hours per team"
+msgstr "Stunden pro Team"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__hours_saved
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__hours_saved
+msgid "Hours saved"
+msgstr "Eingesparte Stunden"
+
+#. module: isaiworthit
+#: model:ir.actions.act_window,name:isaiworthit.action_result
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_result_graph
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_result_list
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_result_pivot
+msgid "Hours saved per team"
+msgstr "Eingesparte Stunden pro Team"
+
+#. module: isaiworthit
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_month_form
+msgid "How the hours were estimated"
+msgstr "So wurden die Stunden geschätzt"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_import__id
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__id
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__id
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__id
+msgid "ID"
+msgstr "ID"
+
+#. module: isaiworthit
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_import_form
+msgid "Import"
+msgstr "Importieren"
+
+#. module: isaiworthit
+#: model:ir.model,name:isaiworthit.model_isaiworthit_import
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_import_form
+msgid "Import AI usage"
+msgstr "KI-Nutzung importieren"
+
+#. module: isaiworthit
+#: model:ir.actions.act_window,name:isaiworthit.action_import
+#: model:ir.ui.menu,name:isaiworthit.menu_import
+msgid "Import usage"
+msgstr "Nutzung importieren"
+
+#. module: isaiworthit
+#: model_terms:ir.actions.act_window,help:isaiworthit.action_month
+msgid "Import your first AI usage file"
+msgstr "Importieren Sie Ihre erste Datei zur KI-Nutzung"
+
+#. module: isaiworthit
+#: model:ir.actions.act_window,name:isaiworthit.action_month
+msgid "Is AI worth it?"
+msgstr "Lohnt sich KI?"
+
+#. module: isaiworthit
+#: model:ir.module.category,name:isaiworthit.module_category_isaiworthit
+#: model:ir.ui.menu,name:isaiworthit.menu_root
+msgid "IsAIWorthIt"
+msgstr "IsAIWorthIt"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__label
+msgid "Label"
+msgstr "Bezeichnung"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_import__write_uid
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__write_uid
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__write_uid
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_import__write_date
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__write_date
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__write_date
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__licence_cost
+msgid "Licence costs"
+msgstr "Lizenzkosten"
+
+#. module: isaiworthit
+#: model:res.groups,name:isaiworthit.group_manager
+msgid "Manager: costs, licences and import"
+msgstr "Manager: Kosten, Lizenzen und Import"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__minutes_per_action
+msgid "Min. per use"
+msgstr "Min. pro Nutzung"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__month
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__month_id
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_month_form
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_month_list
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_result_list
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_result_search
+msgid "Month"
+msgstr "Monat"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__month
+msgid "Month start"
+msgstr "Monatsbeginn"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__monthly_cost
+msgid "Monthly cost"
+msgstr "Monatliche Kosten"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__name
+msgid "Name"
+msgstr "Name"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__net
+msgid "Net benefit"
+msgstr "Nettonutzen"
+
+#. module: isaiworthit
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_month_graph
+msgid "Net benefit per month (value of time saved minus licence costs)"
+msgstr "Nettonutzen pro Monat (Wert der eingesparten Zeit minus Lizenzkosten)"
+
+#. module: isaiworthit
+#: model_terms:ir.actions.act_window,help:isaiworthit.action_result
+msgid "No results yet"
+msgstr "Noch keine Ergebnisse"
+
+#. module: isaiworthit
+#: model:ir.ui.menu,name:isaiworthit.menu_overview
+msgid "Overview"
+msgstr "Übersicht"
+
+#. module: isaiworthit
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_tool__seats
+msgid "Paid seats / licences."
+msgstr "Bezahlte Plätze / Lizenzen."
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__active_users
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__active_users
+msgid "People using AI"
+msgstr "Personen, die KI nutzen"
+
+#. module: isaiworthit
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_tool__active_users
+msgid "People who used the tool in the latest imported month."
+msgstr "Personen, die das Tool im zuletzt importierten Monat genutzt haben."
+
+#. module: isaiworthit
+#: model:ir.model.fields.selection,name:isaiworthit.selection__isaiworthit_tool__unit__active_day
+msgid "Per active day"
+msgstr "Pro aktivem Tag"
+
+#. module: isaiworthit
+#: model:ir.model.fields.selection,name:isaiworthit.selection__isaiworthit_tool__unit__session
+msgid "Per session"
+msgstr "Pro Sitzung"
+
+#. module: isaiworthit
+#: model:ir.model.fields.selection,name:isaiworthit.selection__isaiworthit_tool__unit__use
+msgid "Per use"
+msgstr "Pro Nutzung"
+
+#. module: isaiworthit
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_tool__cost_per_seat
+msgid "Price per seat and month."
+msgstr "Preis pro Lizenz und Monat."
+
+#. module: isaiworthit
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_month_form
+msgid "Result"
+msgstr "Ergebnis"
+
+#. module: isaiworthit
+#. odoo-python
+#: code:addons/isaiworthit/wizard/usage_import.py:0
+msgid "Row %(row)s: '%(value)s' in the column %(column)s is not a number."
+msgstr "Zeile %(row)s: „%(value)s“ in der Spalte %(column)s ist keine Zahl."
+
+#. module: isaiworthit
+#. odoo-python
+#: code:addons/isaiworthit/wizard/usage_import.py:0
+msgid "Row %(row)s: the date '%(value)s' must be written as YYYY-MM-DD."
+msgstr "Zeile %(row)s: Das Datum „%(value)s“ muss als JJJJ-MM-TT geschrieben sein."
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__seats
+msgid "Seats"
+msgstr "Lizenzen"
+
+#. module: isaiworthit
+#: model_terms:ir.actions.act_window,help:isaiworthit.action_tool
+msgid ""
+"Seats and price per seat give the licence costs. Minutes per use is the "
+"benchmark for time saved."
+msgstr "Aus Lizenzen und Preis pro Lizenz ergeben sich die Lizenzkosten. Minuten pro Nutzung sind der Richtwert für die eingesparte Zeit."
+
+#. module: isaiworthit
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_month__licence_cost
+msgid ""
+"Seats × price per seat as set under AI licences at the time of the import. "
+"Past months use today's prices when they are imported again."
+msgstr "Lizenzen × Preis pro Lizenz, wie zum Zeitpunkt des Imports unter KI-Lizenzen eingetragen. Vergangene Monate verwenden beim erneuten Import die heutigen Preise."
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_import__survey_file
+msgid "Survey CSV (optional)"
+msgstr "Umfrage-CSV (optional)"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_import__survey_filename
+msgid "Survey Filename"
+msgstr "Dateiname der Umfrage"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__survey_answers
+msgid "Survey answers"
+msgstr "Umfrageantworten"
+
+#. module: isaiworthit
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_month__calibration_factor
+msgid ""
+"Survey median ÷ benchmark per person. Only used with 5 or more answers, "
+"limited to 0.25–4."
+msgstr "Median der Umfrage ÷ Richtwert pro Person. Wird erst ab 5 Antworten verwendet, begrenzt auf 0,25–4."
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__team
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_result_search
+msgid "Team"
+msgstr "Team"
+
+#. module: isaiworthit
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_result__team
+msgid "Team name, or 'Small teams (combined)' / 'Not matched to an employee'."
+msgstr "Teamname oder „Small teams (combined)“ / „Not matched to an employee“."
+
+#. module: isaiworthit
+#: model_terms:ir.actions.act_window,help:isaiworthit.action_result
+msgid ""
+"Teams with fewer than 5 people are combined, so no number ever points to one"
+" person."
+msgstr "Teams mit weniger als 5 Personen werden zusammengefasst, damit keine Zahl auf eine einzelne Person verweist."
+
+#. module: isaiworthit
+#. odoo-python
+#: code:addons/isaiworthit/wizard/usage_import.py:0
+msgid "The usage file needs the columns date, user and tool. Found: %s"
+msgstr "Die Nutzungsdatei braucht die Spalten date, user und tool. Gefunden: %s"
+
+#. module: isaiworthit
+#: model:ir.model.constraint,message:isaiworthit.constraint_isaiworthit_tool_name_company_uniq
+msgid "This AI tool already exists."
+msgstr "Dieses KI-Tool gibt es bereits."
+
+#. module: isaiworthit
+#: model:ir.model.constraint,message:isaiworthit.constraint_isaiworthit_month_month_company_uniq
+msgid "This month was already imported."
+msgstr "Dieser Monat wurde bereits importiert."
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__tool_id
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_result_search
+msgid "Tool"
+msgstr "Tool"
+
+#. module: isaiworthit
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_month_form
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_month_list
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_result_list
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_tool_list
+msgid "Total"
+msgstr "Gesamt"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__unit
+msgid "Unit"
+msgstr "Einheit"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__unused_seats
+msgid "Unused"
+msgstr "Ungenutzt"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_tool__unused_cost
+msgid "Unused seats cost"
+msgstr "Kosten ungenutzter Lizenzen"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_import__usage_file
+msgid "Usage CSV"
+msgstr "Nutzungs-CSV"
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_import__usage_filename
+msgid "Usage Filename"
+msgstr "Dateiname der Nutzung"
+
+#. module: isaiworthit
+#: model_terms:ir.ui.view,arch_db:isaiworthit.view_import_form
+msgid ""
+"Users are matched to employees by work e-mail only to find their team.\n"
+"                    Nothing is stored per person, and teams with fewer than 5 people are combined.\n"
+"                    Licence costs use the seats and prices under AI licences today, also for past months."
+msgstr "Nutzer werden nur über die geschäftliche E-Mail einem Mitarbeiter zugeordnet, um ihr Team zu finden.\n                    Nichts wird pro Person gespeichert, und Teams mit weniger als 5 Personen werden zusammengefasst.\n                    Lizenzkosten verwenden die heutigen Lizenzen und Preise unter KI-Lizenzen, auch für vergangene Monate."
+
+#. module: isaiworthit
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_month__value
+#: model:ir.model.fields,field_description:isaiworthit.field_isaiworthit_result__value
+msgid "Value of time saved"
+msgstr "Wert der eingesparten Zeit"
+
+#. module: isaiworthit
+#: model:res.groups,name:isaiworthit.group_user
+msgid "Viewer: hours saved per team"
+msgstr "Betrachter: eingesparte Stunden pro Team"
+
+#. module: isaiworthit
+#: model:ir.model.fields,help:isaiworthit.field_isaiworthit_tool__unit
+msgid "What one counted activity in the usage file means for this tool."
+msgstr "Was eine gezählte Aktivität in der Nutzungsdatei bei diesem Tool bedeutet."
+
+#. module: isaiworthit
+#. odoo-python
+#: code:addons/isaiworthit/wizard/usage_import.py:0
+msgid "none"
+msgstr "keine"

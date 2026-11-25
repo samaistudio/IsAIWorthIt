@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_month_graph" model="ir.ui.view">
+        <field name="name">isaiworthit.month.graph</field>
+        <field name="model">isaiworthit.month</field>
+        <field name="arch" type="xml">
+            <graph string="Net benefit per month (value of time saved minus licence costs)" type="bar" sample="1">
+                <field name="month" interval="month"/>
+                <field name="net" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    <record id="view_month_pivot" model="ir.ui.view">
+        <field name="name">isaiworthit.month.pivot</field>
+        <field name="model">isaiworthit.month</field>
+        <field name="arch" type="xml">
+            <pivot string="AI results per month" sample="1">
+                <field name="month" interval="month" type="row"/>
+                <field name="hours_saved" type="measure"/>
+                <field name="value" type="measure"/>
+                <field name="licence_cost" type="measure"/>
+                <field name="net" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    <record id="view_month_list" model="ir.ui.view">
+        <field name="name">isaiworthit.month.list</field>
+        <field name="model">isaiworthit.month</field>
+        <field name="arch" type="xml">
+            <list string="AI results per month" create="0" sample="1">
+                <field name="label" string="Month"/>
+                <field name="active_users"/>
+                <field name="hours_saved"/>
+                <field name="value" sum="Total"/>
+                <field name="licence_cost" sum="Total"/>
+                <field name="net" sum="Total" decoration-success="net &gt; 0" decoration-danger="net &lt; 0"/>
+                <field name="currency_id" column_invisible="1"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_month_form" model="ir.ui.view">
+        <field name="name">isaiworthit.month.form</field>
+        <field name="model">isaiworthit.month</field>
+        <field name="arch" type="xml">
+            <form string="Month" create="0">
+                <sheet>
+                    <div class="oe_title"><h1><field name="label" readonly="1"/></h1></div>
+                    <group>
+                        <group string="Result">
+                            <field name="value"/>
+                            <field name="licence_cost"/>
+                            <field name="net" decoration-success="net &gt; 0" decoration-danger="net &lt; 0"/>
+                            <field name="currency_id" invisible="1"/>
+                        </group>
+                        <group string="How the hours were estimated">
+                            <field name="active_users"/>
+                            <field name="benchmark_hours"/>
+                            <field name="survey_answers"/>
+                            <field name="calibration_factor"/>
+                            <field name="hours_saved"/>
+                            <field name="hourly_cost"/>
+                        </group>
+                    </group>
+                    <field name="result_ids" readonly="1">
+                        <list>
+                            <field name="team"/>
+                            <field name="tool_id"/>
+                            <field name="active_users"/>
+                            <field name="actions"/>
+                            <field name="hours_saved" sum="Total"/>
+                            <field name="value" sum="Total"/>
+                            <field name="currency_id" column_invisible="1"/>
+                        </list>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_month" model="ir.actions.act_window">
+        <field name="name">Is AI worth it?</field>
+        <field name="res_model">isaiworthit.month</field>
+        <field name="view_mode">graph,list,pivot,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Import your first AI usage file</p>
+            <p>Export usage from Microsoft 365, GitHub Copilot or ChatGPT (or keep a shared sheet), then use
+               <b>Import usage</b>. You will see what AI saved in hours and euros next to what the licences cost.</p>
+        </field>
+    </record>
+</odoo>

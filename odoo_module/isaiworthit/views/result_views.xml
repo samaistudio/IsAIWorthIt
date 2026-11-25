@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_result_graph" model="ir.ui.view">
+        <field name="name">isaiworthit.result.graph</field>
+        <field name="model">isaiworthit.result</field>
+        <field name="arch" type="xml">
+            <graph string="Hours saved per team" type="bar" sample="1">
+                <field name="team"/>
+                <field name="tool_id"/>
+                <field name="hours_saved" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    <record id="view_result_pivot" model="ir.ui.view">
+        <field name="name">isaiworthit.result.pivot</field>
+        <field name="model">isaiworthit.result</field>
+        <field name="arch" type="xml">
+            <pivot string="Hours saved per team" sample="1">
+                <field name="team" type="row"/>
+                <field name="month" interval="month" type="col"/>
+                <field name="hours_saved" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    <record id="view_result_list" model="ir.ui.view">
+        <field name="name">isaiworthit.result.list</field>
+        <field name="model">isaiworthit.result</field>
+        <field name="arch" type="xml">
+            <list string="Hours saved per team" create="0" sample="1">
+                <field name="month_id" string="Month"/>
+                <field name="team"/>
+                <field name="tool_id"/>
+                <field name="active_users"/>
+                <field name="hours_saved" sum="Total"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_result_search" model="ir.ui.view">
+        <field name="name">isaiworthit.result.search</field>
+        <field name="model">isaiworthit.result</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="team"/>
+                <field name="tool_id"/>
+                <filter name="group_team" string="Team" context="{'group_by': 'team'}"/>
+                <filter name="group_tool" string="Tool" context="{'group_by': 'tool_id'}"/>
+                <filter name="group_month" string="Month" context="{'group_by': 'month:month'}"/>
+            </search>
+        </field>
+    </record>
+    <record id="action_result" model="ir.actions.act_window">
+        <field name="name">Hours saved per team</field>
+        <field name="res_model">isaiworthit.result</field>
+        <field name="view_mode">graph,pivot,list</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No results yet</p>
+            <p>Teams with fewer than 5 people are combined, so no number ever points to one person.</p>
+        </field>
+    </record>
+</odoo>

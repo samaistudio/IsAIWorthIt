@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_month_user,month user,model_isaiworthit_month,group_user,1,0,0,0
+access_month_manager,month manager,model_isaiworthit_month,group_manager,1,1,1,1
+access_result_user,result user,model_isaiworthit_result,group_user,1,0,0,0
+access_result_manager,result manager,model_isaiworthit_result,group_manager,1,1,1,1
+access_tool_user,tool user,model_isaiworthit_tool,group_user,1,0,0,0
+access_tool_manager,tool manager,model_isaiworthit_tool,group_manager,1,1,1,1
+access_import_manager,import manager,model_isaiworthit_import,group_manager,1,1,1,1

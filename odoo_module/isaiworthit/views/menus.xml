@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_root" name="IsAIWorthIt" web_icon="isaiworthit,static/description/icon.png"
+              groups="group_user" sequence="80"/>
+    <menuitem id="menu_overview" name="Overview" parent="menu_root" action="action_month"
+              groups="group_manager" sequence="10"/>
+    <menuitem id="menu_teams" name="Hours per team" parent="menu_root" action="action_result" sequence="20"/>
+    <menuitem id="menu_licences" name="AI licences" parent="menu_root" action="action_tool"
+              groups="group_manager" sequence="30"/>
+    <menuitem id="menu_import" name="Import usage" parent="menu_root" action="action_import"
+              groups="group_manager" sequence="40"/>
+</odoo>

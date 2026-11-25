@@ -1,0 +1,14 @@
+*.pyc
+*.sqlite
+.DS_Store
+.env.local
+__pycache__/
+isaiworthit.config.json
+/data/
+node_modules/
+reports/
+ui/node_modules/
+ui/tsconfig.tsbuildinfo
+# generated at start-up (demo data) or by sync (your own data)
+/web/data/
+_site/
